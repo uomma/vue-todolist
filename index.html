@@ -23,7 +23,7 @@
         <div class="container">
             <div class="row">
                 <ul v-if="objList.length > 0">
-                    <li v-for="(obj,index) in objList">objList</li>
+                    <li v-for="(obj,index) in objList">{{obj.text}}</li>
                 </ul>
                 <div v-else class="error">No object in objList</div>
 

@@ -32,3 +32,9 @@ ul {
     background-color: lightgray;
     list-style: none;
 }
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

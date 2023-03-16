@@ -22,6 +22,10 @@ createApp({
                 this.newObj = "";
             }
 
+        },
+
+        removeObj(index) {
+            this.objList.splice(index,1);
         }
     }
 }).mount('#app');

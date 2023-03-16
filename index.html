@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="titolo">
+            TODO list Marshall
+        </div>
+        <div class="container">
+            <div class="row addObj">
+                <input v-model="newObj" type="text" placeholder="inserisci il tuo TODO" @keyup.enter="addObj">
+                <button type="button" @click="addObj">ADD</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <ul v-if="objList.length > 0">
+                    <li v-for="(obj,index) in objList">objList</li>
+                </ul>
+                <div v-else class="error">No object in objList</div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <!--Vue from CDN-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!--Vue from CDN-->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
